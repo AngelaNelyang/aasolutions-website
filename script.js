@@ -69,3 +69,45 @@
       if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
     });
   });
+
+/* ===== NAV FIX ===== */
+#mainNav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* ===== PREVENT HERO BLOCKING ===== */
+.hero-shape {
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== MENU CLICK FIX ===== */
+.menu-toggle {
+  position: relative;
+  z-index: 1001;
+}
+
+/* ===== MOBILE NAV ===== */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 200px;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
