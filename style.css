@@ -489,25 +489,29 @@
   position: relative;
   z-index: 1001;
 }
+/* ===== MOBILE MENU FIX (CORRECT FOR YOUR CODE) ===== */
+@media (max-width: 900px) {
 
-/* ===== MOBILE NAV ===== */
-@media (max-width: 768px) {
-
-  .nav-links {
+  .mobile-menu {
     display: none;
+    flex-direction: column;
+    background: white;
     position: absolute;
     top: 70px;
     right: 0;
-    background: white;
-    width: 200px;
-    flex-direction: column;
+    width: 220px;
     padding: 1rem;
-    z-index: 1000;
+    z-index: 2000;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   }
 
-  .nav-links.active {
+  .mobile-menu.show {
     display: flex;
   }
+
+  .hamburger {
+    display: flex;
+    z-index: 3000;
+    position: relative;
+  }
 }
-
-
