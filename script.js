@@ -1,4 +1,4 @@
-
+ console.log("JS LOADED");
   // Language system
   let currentLang = 'en';
   function toggleLang() {
