@@ -17,7 +17,7 @@
       const txt = opt.getAttribute('data-' + currentLang);
       if (txt) opt.textContent = txt;
     });
-    document.getElementById('html-lang').setAttribute('lang', currentLang === 'sw' ? 'sw' : 'en');
+   document.documentElement.setAttribute('lang', currentLang);
   }
 
   // Hamburger menu
